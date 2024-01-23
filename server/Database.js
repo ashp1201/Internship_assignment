@@ -2,7 +2,9 @@ const mongoose=require('mongoose');
 ;
 
 const Connection = async () => {
-    const URL = `mongodb+srv://user1:mswordpass@ms-word-clone.sbf2ifg.mongodb.net/?retryWrites=true&w=majority`;
+    const URL = `mongodb+srv://<user>:<password>@ms-word-clone.sbf2ifg.mongodb.net/?retryWrites=true&w=majority`;
+    //here update username and password 
+    // I have removed from my credential 
     try {
         await mongoose.connect(URL);
 
